@@ -4,6 +4,11 @@
 #include "dominion.h"
 
 int drawCard(int player, struct gameState *state);
+int mineimplementation(int currentPlayer, int choice1, int choice2, int choice3, struct gameState *state, int handPos);
+int villageimplementation(int currentPlayer, struct gameState *state, int handPos);
+int smithyimplementation(int currentPlayer, struct gameState *state, int handPos);
+int remodelimplementation(struct gameState *state, int currentPlayer, int choice1, int choice2, int handPos);
+int adventurerimplementation(int currentPlayer, int  temphand[], int drawntreasure, int cardDrawn, struct gameState *state);
 int updateCoins(int player, struct gameState *state, int bonus);
 int discardCard(int handPos, int currentPlayer, struct gameState *state, 
 		int trashFlag);
