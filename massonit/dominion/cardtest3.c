@@ -41,7 +41,11 @@ int main() {
 
 	// initialize a game state and player cards
 	initializeGame(numPlayers, k, seed, &G);
-
+	
+	// copy the game state to a test case
+	memcpy(&testG, &G, sizeof(struct gameState));
+	choice1 = 1;
+	cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
 
 	// cycle through each eligible combination of cards to trash and gain
 	while (cards != 2) {
