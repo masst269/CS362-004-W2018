@@ -93,6 +93,6 @@ int main () {
 			assert(r == 4);
 		}
 	}
-	printf("Finished testing);
+	printf("Finished testing");
 	return 0;
 }
