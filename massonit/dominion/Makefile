@@ -48,10 +48,19 @@ testAll: dominion.o testSuite.c
 interface.o: interface.h interface.c
 	gcc -c interface.c -g  $(CFLAGS)
 
-runtests: testDrawCard 
-	./testDrawCard &> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
+
+runtests: testDrawCard
+        ./testDrawCard &> unittestresult.out
+        ./unittest1 >> unittestresult.out
+        ./unittest3 >> unittestresult.out
+        ./cardtest1 >> unittestresult.out
+        ./cardtest2 >> unittestresult.out
+        ./cardtest3 >> unittestresult.out
+        ./cardtest4 >> unittestresult.out
+        gcov dominion.c >> unittestresult.out
+        cat dominion.c.gcov >> unittestresult.out
+        cat
+
 
 
 player: player.c interface.o
