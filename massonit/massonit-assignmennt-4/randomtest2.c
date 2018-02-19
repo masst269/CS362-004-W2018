@@ -50,7 +50,7 @@ int main(){
 			}
 			printf("Completed Test #%d\n", i);
 		}
-		printf("`\n");
+		printf("\n");
 		printf("State: %d failures and %d sucesses\n", failures, success);
 		printf("%d game run\n", NUM_TEST);
 		return 0;
