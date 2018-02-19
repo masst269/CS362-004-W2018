@@ -33,6 +33,7 @@ cardtest4: cardtest4.c dominion.o rngs.o
 unittest1: unittest1.c dominion.o rngs.o
 	gcc -o unittest1 -g  unittest1.c dominion.o rngs.o $(CFLAGS)
 
+#unittest for 2 and 4 don't really compile which is why I block them out plus they aren't required for this homework
 #unittest2: unittest2.c dominion.o rngs.o
 #	gcc -o unittest2 -g  unittest2.c dominion.o rngs.o $(CFLAGS)
 
