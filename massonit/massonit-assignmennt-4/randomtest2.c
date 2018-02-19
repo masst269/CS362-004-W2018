@@ -14,6 +14,8 @@ int main(){
 		int i, m, players, seed, player = 0, count1 = 0, count2 = 0, count3 = 0, failures = 0, fail = 0, success = 0;
 		struct gameState G;
 		srand(time(0));
+		printf("Random Test for Village\n");
+		//The randomness comes the generating numbers for the deck, hand, discard, and player count
 		for( i = 0, failures = 0, success = 0; i < NUM_TEST; i++){
 			players = rand() % 4;
 			seed = rand();
